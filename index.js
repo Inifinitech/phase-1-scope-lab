@@ -4,18 +4,19 @@ function upperCaseCustomerName() {
   customerName = customerName.toUpperCase();
 }
 
-var bestCustomer;
+
 // function to declare a variable in global scope
 function setBestCustomer() {
-  bestCustomer = 'not bob';
+ bestCustomer = 'not bob';
+ return bestCustomer;
 }
-setBestCustomer();
-// function that changes a global scope variable
+
+//function that changes a global scope variable
 function overwriteBestCustomer() {
-  bestCustomer = 'maybe bob';
+  return bestCustomer = 'maybe bob';
 }
-overwriteBestCustomer();
-// constant in the global scope
+
+//constant in the global scope
 const leastFavoriteCustomer = "value";
 function changeLeastFavoriteCustomer() {
   leastFavoriteCustomer = "intial";
